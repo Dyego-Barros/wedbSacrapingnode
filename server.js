@@ -12,8 +12,7 @@ app.listen(port, (error)=>{
 
 app.get('/',async (req,res)=>{
     const options = { count: 5, mediaType:['image','video'], download:false}
-    let user =  await instatouch.user('soonasolution', options)
-    //console.log(user);
+    let user =  await instatouch.user('', options)   
     res.send(user);
 })
 
